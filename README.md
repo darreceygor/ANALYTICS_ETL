@@ -4,7 +4,7 @@ CuentasDeGastos.xlsm se conecta a SAP, genera reportes sobre la trx S_ALR_870136
 
 nBalance.xlsm se conecta a SAP, genera reportes sobre la trx S_ALR_87012284 segun criterios ingresados, los descarga individualmente y los procesa de manera de generar dos consolidados en formato xlsx (uno es sobre los segmentos y el otro sobre los centro de beneficio)
 
----------------
+---------------------------------------------------------------------------------------------------------------------------------------------------
 Scripting SAP
 ```
 Set SapGuiAuto = GetObject("SAPGUI")
@@ -38,11 +38,12 @@ Set SapGuiAuto = GetObject("SAPGUI")
         'session.findById("wnd[0]/usr/tabsTABSTRIP_TABBL1/tabpUCOM30").select ' evaluaciones especiales
  ```
 
-
+---------------------------------------------------------------------------------------------------------------------------------------------------
 VBS
+```
 
-
-
+```
+---------------------------------------------------------------------------------------------------------------------------------------------------
 VBA
 
  ```
