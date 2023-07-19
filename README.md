@@ -7,7 +7,7 @@ nBalance.xlsm se conecta a SAP, genera reportes sobre la trx S_ALR_87012284 segu
 ---------------
 Scripting SAP
 '''
- Set SapGuiAuto = GetObject("SAPGUI")
+Set SapGuiAuto = GetObject("SAPGUI")
        Set app = SapGuiAuto.GetScriptingEngine
        Set Connection = app.OpenConnection(ambiente, True)
        Set session = Connection.Children(0)
