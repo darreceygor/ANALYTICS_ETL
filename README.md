@@ -6,7 +6,7 @@ nBalance.xlsm se conecta a SAP, genera reportes sobre la trx S_ALR_87012284 segu
 
 ---------------
 Scripting SAP
-'''
+```
 Set SapGuiAuto = GetObject("SAPGUI")
        Set app = SapGuiAuto.GetScriptingEngine
        Set Connection = app.OpenConnection(ambiente, True)
@@ -36,7 +36,7 @@ Set SapGuiAuto = GetObject("SAPGUI")
         
         tblDOSub = tblDO & "/ssub%_SUBSCREEN_TABBL1:RFBILA00:0001/"
         'session.findById("wnd[0]/usr/tabsTABSTRIP_TABBL1/tabpUCOM30").select ' evaluaciones especiales
-'''
+ ```
 
 
 VBS
@@ -45,7 +45,7 @@ VBS
 
 VBA
 
-'''
+ ```
 Workbooks.Add.SaveAs Filename:=consolidadoCeBe
     
     ChDir rutaDestino
@@ -75,10 +75,9 @@ Workbooks.Add.SaveAs Filename:=consolidadoCeBe
         Windows(archivo).Activate
         Sheets(hoja).Select
         Sheets(hoja).Move Before:=Workbooks(consolidadoCeBe).Sheets(1)
-        
-        
+     
     Next cb
- 
+ ``` 
     Windows(consolidadoCeBe).Activate
     ActiveWorkbook.Save
     ActiveWorkbook.Close
