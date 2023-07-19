@@ -1,0 +1,4 @@
+SCHTASKS /Create /SC DAILY /MO 2 /TN pbi /TR C:\Users\PowerBI\OneDrive - Canteras Cerro Negro S.A\Escritorio\nMacro\nMacro.xlsm /ST 10:40:00 /SD 03/07/2023
+
+
+SCHTASKS /Create /SC DAILY /MO 1 /TN pbi /TR "C:\Users\PowerBI\OneDrive - Canteras Cerro Negro S.A\Escritorio\nMacro\pbi.vbs" /ST 10:50:00 /SD 03/07/2023
